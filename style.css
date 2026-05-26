@@ -1,0 +1,230 @@
+:root {
+  color-scheme: light;
+  --fg: #111827;
+  --muted: #6b7280;
+  --link: #2563eb;
+  --bg: #ffffff;
+  --bg-alt: #f9fafb;
+  --border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--fg);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+nav a {
+  margin-left: 20px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: var(--fg);
+}
+
+a {
+  color: var(--link);
+}
+
+.hero {
+  padding: 64px 0 32px;
+}
+
+.hero .kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.hero .lead {
+  color: var(--muted);
+  font-size: 17px;
+  max-width: 580px;
+}
+
+.section {
+  padding: 48px 0;
+  border-top: 1px solid var(--border);
+}
+
+.section--alt {
+  background: var(--bg-alt);
+}
+
+.section h2 {
+  font-size: 22px;
+  margin: 0 0 24px;
+}
+
+.cards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.cards li {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.cards h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.cards p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.product {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.product h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.product-pricing {
+  margin: 8px 0 16px;
+  color: var(--muted);
+}
+
+.product-pricing strong {
+  color: var(--fg);
+}
+
+.company {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 8px 24px;
+  margin: 0;
+  font-size: 15px;
+}
+
+.company dt {
+  color: var(--muted);
+}
+
+.company dd {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .company {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+  .company dt {
+    margin-top: 12px;
+  }
+  .hero h1 {
+    font-size: 26px;
+  }
+}
+
+.policies {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 32px;
+}
+
+.legal-page main {
+  padding: 32px 0 64px;
+}
+
+.legal-page h1 {
+  font-size: 26px;
+  margin: 0 0 8px;
+}
+
+.legal-page .meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 32px;
+}
+
+.legal-page h2 {
+  font-size: 18px;
+  margin: 32px 0 8px;
+}
+
+.legal-page p,
+.legal-page li {
+  font-size: 15px;
+}
